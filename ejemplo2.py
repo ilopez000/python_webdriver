@@ -13,7 +13,7 @@ driver = webdriver.Chrome()
 
 # Abrir la página de Google
 driver.get(url)
-
+time.sleep(5)
 # Esperar a que el cuadro de texto de búsqueda sea interactuable
 search_box = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.ID, "APjFqb"))
